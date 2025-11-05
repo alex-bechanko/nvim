@@ -76,7 +76,7 @@
     let
       inherit (nixCats) utils;
       luaPath = ./.;
-      forEachSystem = utils.eachSystem nixpkgs.lib.platforms.all;
+      forEachSystem = utils.eachSystem [ "x86_64-linux" ];
       extra_pkg_config = { };
       dependencyOverlays = # (import ./overlays inputs) ++
         [

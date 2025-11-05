@@ -1,0 +1,3 @@
+syntax = "LuaJIT"
+quote_style = "ForceSingle"
+

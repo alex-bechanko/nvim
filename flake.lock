@@ -172,6 +172,22 @@
         "type": "github"
       }
     },
+    "plugins-gruvbox": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1768324288,
+        "narHash": "sha256-dotM6G4JG1dC9/JwHDR+lg4bMv7zPVI9MgEqCgCGECQ=",
+        "owner": "ellisonleao",
+        "repo": "gruvbox.nvim",
+        "rev": "a472496e1a4465a2dd574389dcf6cdb29af9bf1b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ellisonleao",
+        "repo": "gruvbox.nvim",
+        "type": "github"
+      }
+    },
     "plugins-indent-blankline": {
       "flake": false,
       "locked": {
@@ -308,6 +324,7 @@
         "nixpkgs": "nixpkgs_2",
         "plugins-catppuccin": "plugins-catppuccin",
         "plugins-conform": "plugins-conform",
+        "plugins-gruvbox": "plugins-gruvbox",
         "plugins-indent-blankline": "plugins-indent-blankline",
         "plugins-kanagawa": "plugins-kanagawa",
         "plugins-luasnip": "plugins-luasnip",

@@ -68,7 +68,7 @@ vim.o.visualbell = true
 -- enable project specific .nvim.lua settings
 vim.o.exrc = true
 
-vim.cmd.colorscheme('kanagawa-wave')
+vim.cmd.colorscheme('gruvbox')
 
 vim.lsp.enable('gopls')
 vim.lsp.enable('lua_ls')
@@ -104,7 +104,7 @@ require('conform').setup({
 
 require('ibl').setup()
 
-require('nvim-treesitter.configs').setup({
+require('nvim-treesitter').setup({
 	ensure_installed = {},
 	auto_install = false,
 	highlight = {

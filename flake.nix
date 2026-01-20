@@ -22,6 +22,11 @@
       flake = false;
     };
 
+    plugins-gruvbox = {
+      url = "github:ellisonleao/gruvbox.nvim";
+      flake = false;
+    };
+
     plugins-indent-blankline = {
       url = "github:lukas-reineke/indent-blankline.nvim";
       flake = false;
@@ -134,6 +139,7 @@
               blink-cmp.packages.${pkgs.system}.blink-cmp
               catppuccin
               conform
+              gruvbox
               indent-blankline
               kanagawa
               luasnip
@@ -254,7 +260,7 @@
             name = defaultPackageName;
             packages = [ defaultPackage ];
             inputsFrom = [ ];
-            shellHook = '''';
+            shellHook = "";
           };
         };
 

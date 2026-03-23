@@ -15,10 +15,10 @@ vim.wo.signcolumn = 'yes'
 
 -- don't wrap text virtually
 vim.wo.wrap = false
--- wrap text literally at 120 characters
-vim.bo.textwidth = 120
+-- don't wrap text literally either
+vim.bo.textwidth = 0
 -- show a column right before the 120th character
-vim.wo.colorcolumn = '-2'
+vim.wo.colorcolumn = '120'
 
 -- highlight matching braces
 vim.o.showmatch = true

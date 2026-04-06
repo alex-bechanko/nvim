@@ -127,6 +127,7 @@
             ];
 
             rust = with pkgs; [
+              fenix.stable.cargo
               fenix.stable.clippy
               fenix.stable.rust-analyzer
               fenix.stable.rustfmt

@@ -87,6 +87,21 @@ require('blink.cmp').setup({
 		keymap = { preset = 'inherit' },
 		completion = { menu = { auto_show = true } },
 	},
+	completion = {
+		documentation = {
+			auto_show = true,
+			auto_show_delay_ms = 200,
+		},
+		menu = {
+			draw = {
+				columns = {
+					{ 'label', 'label_description', gap = 1 },
+					{ 'kind_icon', 'kind', gap = 1 },
+					{ 'source_name' },
+				},
+			},
+		},
+	},
 	signature = { enabled = true },
 })
 

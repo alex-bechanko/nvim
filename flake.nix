@@ -132,6 +132,10 @@
               fenix.stable.rust-analyzer
               fenix.stable.rustfmt
             ];
+
+            github = with pkgs; [
+              zizmor
+            ];
           };
 
           # This is for plugins that will load at startup without using packadd:
@@ -221,6 +225,7 @@
               rust = true;
               go = true;
               lua = true;
+              github = true;
             };
           };
       };

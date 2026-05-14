@@ -137,6 +137,22 @@
         "type": "github"
       }
     },
+    "plugins-diffview": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1718279802,
+        "narHash": "sha256-SX+ybIzL/w6uyCy4iZKnWnzTFwqB1oXSgyYVAdpdKi8=",
+        "owner": "sindrets",
+        "repo": "diffview.nvim",
+        "rev": "4516612fe98ff56ae0415a259ff6361a89419b0a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sindrets",
+        "repo": "diffview.nvim",
+        "type": "github"
+      }
+    },
     "plugins-gruvbox": {
       "flake": false,
       "locked": {
@@ -289,6 +305,7 @@
         "nixpkgs": "nixpkgs_2",
         "plugins-catppuccin": "plugins-catppuccin",
         "plugins-conform": "plugins-conform",
+        "plugins-diffview": "plugins-diffview",
         "plugins-gruvbox": "plugins-gruvbox",
         "plugins-indent-blankline": "plugins-indent-blankline",
         "plugins-kanagawa": "plugins-kanagawa",

@@ -67,6 +67,11 @@
       flake = false;
     };
 
+    plugins-diffview = {
+      url = "github:sindrets/diffview.nvim";
+      flake = false;
+    };
+
   };
 
   # see :help nixCats.flake.outputs
@@ -108,6 +113,7 @@
         {
           lspsAndRuntimeDeps = {
             general = with pkgs; [
+              git
               ripgrep
               fd
             ];
@@ -144,6 +150,7 @@
               blink-cmp.packages.${pkgs.system}.blink-cmp
               catppuccin
               conform
+              diffview
               gruvbox
               indent-blankline
               kanagawa

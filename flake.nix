@@ -118,6 +118,10 @@
               fd
             ];
 
+            dhall = with pkgs; [
+              dhall-lsp-server
+            ];
+
             go = with pkgs; [
               gopls
             ];
@@ -228,6 +232,7 @@
             # (and other information to pass to lua)
             categories = {
               general = true;
+              dhall = true;
               nix = true;
               rust = true;
               go = true;

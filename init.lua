@@ -70,6 +70,7 @@ vim.o.exrc = true
 
 vim.cmd.colorscheme('gruvbox')
 
+vim.lsp.enable('dhall_lsp_server')
 vim.lsp.enable('gopls')
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('nixd')

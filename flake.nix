@@ -136,6 +136,10 @@
               nixfmt
             ];
 
+            python = with pkgs; [
+              pyright
+            ];
+
             rust = with pkgs; [
               fenix.stable.cargo
               fenix.stable.clippy
@@ -232,12 +236,14 @@
             # (and other information to pass to lua)
             categories = {
               general = true;
+
               dhall = true;
-              nix = true;
-              rust = true;
+              github = true;
               go = true;
               lua = true;
-              github = true;
+              nix = true;
+              python = true;
+              rust = true;
             };
           };
       };

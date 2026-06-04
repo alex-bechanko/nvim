@@ -74,6 +74,7 @@ vim.lsp.enable('dhall_lsp_server')
 vim.lsp.enable('gopls')
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('nixd')
+vim.lsp.enable('pyright')
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('zizmor')
 

@@ -133,7 +133,6 @@
 
             markdown = with pkgs; [
               prettier
-              marksman
             ];
 
             nix = with pkgs; [

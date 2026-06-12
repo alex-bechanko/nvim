@@ -81,7 +81,6 @@ local lsps = {
 	'dhall_lsp_server',
 	'gopls',
 	'lua_ls',
-	'marksman',
 	'nixd',
 	'pyright',
 	'rust_analyzer',

@@ -131,6 +131,10 @@
               stylua
             ];
 
+            markdown = with pkgs; [
+              marksman
+            ];
+
             nix = with pkgs; [
               nixd
               nixfmt
@@ -241,6 +245,7 @@
               github = true;
               go = true;
               lua = true;
+              markdown = true;
               nix = true;
               python = true;
               rust = true;

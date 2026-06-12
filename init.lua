@@ -70,13 +70,20 @@ vim.o.exrc = true
 
 vim.cmd.colorscheme('gruvbox')
 
-vim.lsp.enable('dhall_lsp_server')
-vim.lsp.enable('gopls')
-vim.lsp.enable('lua_ls')
-vim.lsp.enable('nixd')
-vim.lsp.enable('pyright')
-vim.lsp.enable('rust_analyzer')
-vim.lsp.enable('zizmor')
+local lsps = {
+	'dhall_lsp_server',
+	'gopls',
+	'lua_ls',
+	'marksman',
+	'nixd',
+	'pyright',
+	'rust_analyzer',
+	'zizmor',
+}
+
+for _, server in ipairs(lsps) do
+	vim.lsp.enable(server)
+end
 
 require('blink.cmp').setup({
 	keymap = { preset = 'super-tab' },

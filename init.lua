@@ -70,6 +70,13 @@ vim.o.exrc = true
 
 vim.cmd.colorscheme('gruvbox')
 
+vim.filetype.add({
+	extension = {
+		gotmpl = 'gotmpl',
+		mdx = 'markdown.mdx',
+	},
+})
+
 local lsps = {
 	'dhall_lsp_server',
 	'gopls',
@@ -116,10 +123,16 @@ require('blink.cmp').setup({
 })
 
 require('conform').setup({
+	formatters = {
+		prettier = {
+			prepend_args = { '--print-width', '80', '--prose-wrap', 'always' },
+		},
+	},
 	formatters_by_ft = {
 		lua = { 'stylua' },
 		rust = { 'rustfmt' },
 		nix = { 'nixfmt' },
+		markdown = { 'prettier' },
 	},
 	format_on_save = {
 		timeout_ms = 500,

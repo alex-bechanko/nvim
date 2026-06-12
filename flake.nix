@@ -132,6 +132,7 @@
             ];
 
             markdown = with pkgs; [
+              prettier
               marksman
             ];
 

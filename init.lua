@@ -124,7 +124,7 @@ require('blink.cmp').setup({
 require('conform').setup({
 	formatters = {
 		prettier = {
-			prepend_args = { '--print-width', '100', '--prose-wrap', 'always' },
+			prepend_args = { '--print-width', '120', '--prose-wrap', 'always' },
 		},
 	},
 	formatters_by_ft = {

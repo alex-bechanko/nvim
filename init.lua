@@ -144,9 +144,14 @@ require('ibl').setup()
 require('nvim-treesitter').setup({
 	ensure_installed = {},
 	auto_install = false,
-	highlight = {
-		enable = true,
-	},
+})
+
+-- Automatically start tree-sitter highlighting for all filetypes with a parser
+vim.api.nvim_create_autocmd('FileType', {
+	pattern = '*',
+	callback = function()
+		pcall(vim.treesitter.start)
+	end,
 })
 
 require('ufo').setup({

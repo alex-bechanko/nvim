@@ -92,12 +92,8 @@ for _, server in ipairs(lsps) do
 end
 
 require('blink.cmp').setup({
-	keymap = { preset = 'super-tab' },
 	appearance = {
 		nerd_font_variant = 'normal',
-	},
-	snippets = {
-		preset = 'luasnip',
 	},
 	cmdline = {
 		keymap = { preset = 'inherit' },
@@ -118,7 +114,21 @@ require('blink.cmp').setup({
 			},
 		},
 	},
+	keymap = { preset = 'super-tab' },
 	signature = { enabled = true },
+	snippets = {
+		preset = 'luasnip',
+	},
+	sources = {
+		default = { 'lsp', 'buffer', 'snippets', 'path', 'latex_symbols' },
+		providers = {
+			latex_symbols = {
+				name = 'latex_symbols',
+				module = 'blink.compat.source',
+				score_offet = -1,
+			},
+		},
+	},
 })
 
 require('conform').setup({
@@ -146,12 +156,8 @@ require('nvim-treesitter').setup({
 	auto_install = false,
 })
 
--- Automatically start tree-sitter highlighting for all filetypes with a parser
-vim.api.nvim_create_autocmd('FileType', {
-	pattern = '*',
-	callback = function()
-		pcall(vim.treesitter.start)
-	end,
+require('render-markdown').setup({
+	completions = { lsp = { enabled = true } },
 })
 
 require('ufo').setup({

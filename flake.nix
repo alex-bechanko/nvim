@@ -12,8 +12,18 @@
     blink-cmp.url = "github:saghen/blink.cmp";
 
     # Neovim plugins built and put into overlay
+    plugins-blink-compat = {
+      url = "github:saghen/blink.compat";
+      flake = false;
+    };
+
     plugins-catppuccin = {
       url = "github:catppuccin/nvim";
+      flake = false;
+    };
+
+    plugins-cmp-latex-symbols = {
+      url = "github:kdheepak/cmp-latex-symbols";
       flake = false;
     };
 
@@ -54,6 +64,11 @@
 
     plugins-promise-async = {
       url = "github:kevinhwang91/promise-async";
+      flake = false;
+    };
+
+    plugins-render-markdown = {
+      url = "github:MeanderingProgrammer/render-markdown.nvim";
       flake = false;
     };
 
@@ -160,7 +175,9 @@
           startupPlugins = {
             general = with pkgs.neovimPlugins; [
               blink-cmp.packages.${pkgs.system}.blink-cmp
+              blink-compat
               catppuccin
+              cmp-latex-symbols
               conform
               diffview
               gruvbox
@@ -171,6 +188,7 @@
               nvim-web-devicons
               promise-async
               pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+              render-markdown
               ufo
               which-key
             ];

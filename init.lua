@@ -160,6 +160,7 @@ require('nvim-treesitter').setup({
 
 require('render-markdown').setup({
 	completions = { lsp = { enabled = true } },
+	render_modes = { 'n', 'c', 'i' },
 })
 
 require('ufo').setup({

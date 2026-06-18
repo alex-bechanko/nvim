@@ -43,6 +43,8 @@ return {
 				useLibraryCodeForTypes = true,
 				diagnosticMode = 'openFilesOnly',
 			},
+			-- ruff handles import organization
+			disableOrganizeImports = true,
 		},
 	},
 	on_attach = function(client, bufnr)

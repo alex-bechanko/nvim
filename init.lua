@@ -83,6 +83,7 @@ local lsps = {
 	'lua_ls',
 	'nixd',
 	'pyright',
+	'ruff',
 	'rust_analyzer',
 	'zizmor',
 }
@@ -139,6 +140,7 @@ require('conform').setup({
 	},
 	formatters_by_ft = {
 		lua = { 'stylua' },
+		python = { 'ruff_format' },
 		rust = { 'rustfmt' },
 		nix = { 'nixfmt' },
 		markdown = { 'prettier' },

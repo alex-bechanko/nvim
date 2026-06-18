@@ -157,6 +157,7 @@
 
             python = with pkgs; [
               pyright
+              ruff
             ];
 
             rust = with pkgs; [

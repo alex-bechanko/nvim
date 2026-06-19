@@ -121,7 +121,12 @@ require('blink.cmp').setup({
 		preset = 'luasnip',
 	},
 	sources = {
-		default = { 'lsp', 'buffer', 'snippets', 'path', 'latex_symbols' },
+		default = function()
+			if vim.bo.filetype == 'dhall' then
+				return { 'lsp', 'buffer', 'snippets', 'latex_symbols' }
+			end
+			return { 'lsp', 'buffer', 'snippets', 'path', 'latex_symbols' }
+		end,
 		providers = {
 			latex_symbols = {
 				name = 'latex_symbols',

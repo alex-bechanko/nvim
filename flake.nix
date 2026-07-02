@@ -32,6 +32,11 @@
       flake = false;
     };
 
+    plugins-gitsigns = {
+      url = "github:lewis6991/gitsigns.nvim";
+      flake = false;
+    };
+
     plugins-gruvbox = {
       url = "github:ellisonleao/gruvbox.nvim";
       flake = false;
@@ -44,6 +49,11 @@
 
     plugins-kanagawa = {
       url = "github:rebelot/kanagawa.nvim";
+      flake = false;
+    };
+
+    plugins-lualine = {
+      url = "github:nvim-lualine/lualine.nvim";
       flake = false;
     };
 
@@ -139,6 +149,7 @@
           lspsAndRuntimeDeps = {
             general = with pkgs; [
               git
+              jujutsu
               ripgrep
               fd
             ];
@@ -191,9 +202,11 @@
               cmp-latex-symbols
               conform
               diffview
+              gitsigns
               gruvbox
               indent-blankline
               kanagawa
+              lualine
               luasnip
               mini-icons
               nvim-web-devicons

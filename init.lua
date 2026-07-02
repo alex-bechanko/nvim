@@ -156,7 +156,11 @@ require('conform').setup({
 	},
 })
 
+require('gitsigns').setup()
+
 require('ibl').setup()
+
+require('statusline').setup()
 
 require('nvim-treesitter').setup({
 	ensure_installed = {},

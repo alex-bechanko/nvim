@@ -185,6 +185,22 @@
         "type": "github"
       }
     },
+    "plugins-gitsigns": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1782899415,
+        "narHash": "sha256-VqEz6o+9DvKekQ9h8QQntFaIb90BaveTctKKb0lmQLI=",
+        "owner": "lewis6991",
+        "repo": "gitsigns.nvim",
+        "rev": "eb60cc7b94c46005237fd34170d76f3a089a90aa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lewis6991",
+        "repo": "gitsigns.nvim",
+        "type": "github"
+      }
+    },
     "plugins-gruvbox": {
       "flake": false,
       "locked": {
@@ -230,6 +246,22 @@
       "original": {
         "owner": "rebelot",
         "repo": "kanagawa.nvim",
+        "type": "github"
+      }
+    },
+    "plugins-lualine": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1780194559,
+        "narHash": "sha256-6PjGu30Ed4/e/HQ3mIFQuUOxcCiti/71jjlMsjN7EoA=",
+        "owner": "nvim-lualine",
+        "repo": "lualine.nvim",
+        "rev": "221ce6b2d999187044529f49da6554a92f740a96",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-lualine",
+        "repo": "lualine.nvim",
         "type": "github"
       }
     },
@@ -388,9 +420,11 @@
         "plugins-cmp-latex-symbols": "plugins-cmp-latex-symbols",
         "plugins-conform": "plugins-conform",
         "plugins-diffview": "plugins-diffview",
+        "plugins-gitsigns": "plugins-gitsigns",
         "plugins-gruvbox": "plugins-gruvbox",
         "plugins-indent-blankline": "plugins-indent-blankline",
         "plugins-kanagawa": "plugins-kanagawa",
+        "plugins-lualine": "plugins-lualine",
         "plugins-luasnip": "plugins-luasnip",
         "plugins-mini-icons": "plugins-mini-icons",
         "plugins-nvim-web-devicons": "plugins-nvim-web-devicons",

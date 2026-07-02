@@ -168,11 +168,19 @@ require('render-markdown').setup({
 	render_modes = true,
 })
 
+require('telescope').setup({})
+
 require('ufo').setup({
 	provider_selector = function(_, _, _)
 		return { 'treesitter', 'indent' }
 	end,
 })
+
+local telescope_builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', telescope_builtin.find_files, { desc = 'Find files' })
+vim.keymap.set('n', '<leader>fg', telescope_builtin.live_grep, { desc = 'Live grep' })
+vim.keymap.set('n', '<leader>fb', telescope_builtin.buffers, { desc = 'Find buffers' })
+vim.keymap.set('n', '<leader>fh', telescope_builtin.help_tags, { desc = 'Find help tags' })
 
 vim.keymap.set('n', ']b', '<cmd>bnext<cr>', { desc = 'Next buffer' })
 vim.keymap.set('n', '[b', '<cmd>bprev<cr>', { desc = 'Previous buffer' })

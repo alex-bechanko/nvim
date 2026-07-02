@@ -281,6 +281,22 @@
         "type": "github"
       }
     },
+    "plugins-plenary": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1775800366,
+        "narHash": "sha256-nkfETDkPiE+Kd2BWYZijgUp9bP8RgFwRmvqJz2BMuq4=",
+        "owner": "nvim-lua",
+        "repo": "plenary.nvim",
+        "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-lua",
+        "repo": "plenary.nvim",
+        "type": "github"
+      }
+    },
     "plugins-promise-async": {
       "flake": false,
       "locked": {
@@ -310,6 +326,22 @@
       "original": {
         "owner": "MeanderingProgrammer",
         "repo": "render-markdown.nvim",
+        "type": "github"
+      }
+    },
+    "plugins-telescope": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1782201384,
+        "narHash": "sha256-/GycCrepwDer0UvBN/f84pJUSvNp+ZfTIUPv0psl+IQ=",
+        "owner": "nvim-telescope",
+        "repo": "telescope.nvim",
+        "rev": "427b576c16792edad01a92b89721d923c19ad60f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-telescope",
+        "repo": "telescope.nvim",
         "type": "github"
       }
     },
@@ -362,8 +394,10 @@
         "plugins-luasnip": "plugins-luasnip",
         "plugins-mini-icons": "plugins-mini-icons",
         "plugins-nvim-web-devicons": "plugins-nvim-web-devicons",
+        "plugins-plenary": "plugins-plenary",
         "plugins-promise-async": "plugins-promise-async",
         "plugins-render-markdown": "plugins-render-markdown",
+        "plugins-telescope": "plugins-telescope",
         "plugins-ufo": "plugins-ufo",
         "plugins-which-key": "plugins-which-key"
       }

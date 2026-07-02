@@ -62,6 +62,11 @@
       flake = false;
     };
 
+    plugins-plenary = {
+      url = "github:nvim-lua/plenary.nvim";
+      flake = false;
+    };
+
     plugins-promise-async = {
       url = "github:kevinhwang91/promise-async";
       flake = false;
@@ -69,6 +74,11 @@
 
     plugins-render-markdown = {
       url = "github:MeanderingProgrammer/render-markdown.nvim";
+      flake = false;
+    };
+
+    plugins-telescope = {
+      url = "github:nvim-telescope/telescope.nvim";
       flake = false;
     };
 
@@ -187,9 +197,11 @@
               luasnip
               mini-icons
               nvim-web-devicons
+              plenary
               promise-async
               pkgs.vimPlugins.nvim-treesitter.withAllGrammars
               render-markdown
+              telescope
               ufo
               which-key
             ];

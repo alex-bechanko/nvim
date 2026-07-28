@@ -14,27 +14,23 @@ local function update_jj_status()
 		jj_status = ''
 		return
 	end
-	vim.system(
-		{
-			'jj',
-			'log',
-			'--no-graph',
-			'--color',
-			'never',
-			'-r',
-			'@',
-			'-T',
-			'separate(" ", bookmarks.join(","), change_id.shortest(), description.first_line())',
-		},
-		{ cwd = root, text = true },
-		function(obj)
-			local out = vim.trim(obj.stdout or '')
-			vim.schedule(function()
-				jj_status = out
-				pcall(require('lualine').refresh)
-			end)
-		end
-	)
+	vim.system({
+		'jj',
+		'log',
+		'--no-graph',
+		'--color',
+		'never',
+		'-r',
+		'@',
+		'-T',
+		'separate(" ", bookmarks.join(","), change_id.shortest(), description.first_line())',
+	}, { cwd = root, text = true }, function(obj)
+		local out = vim.trim(obj.stdout or '')
+		vim.schedule(function()
+			jj_status = out
+			pcall(require('lualine').refresh)
+		end)
+	end)
 end
 
 local function vcs_component()
@@ -69,9 +65,6 @@ function M.setup()
 			lualine_x = { 'diagnostics', 'filetype' },
 			lualine_y = { 'progress' },
 			lualine_z = { 'location' },
-		},
-		tabline = {
-			lualine_a = { 'buffers' },
 		},
 	})
 end
